@@ -1,16 +1,52 @@
-# React + Vite
+# FormBuilder Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend aplikasi Form Builder, dibangun dengan React + Vite dan Tailwind CSS.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React + Vite
+- React Router DOM
+- Tailwind CSS
 
-## React Compiler
+## Prerequisites
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Node.js v18+
+- npm
+- Backend API sudah berjalan
 
-## Expanding the ESLint configuration
+## Instalasi
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone repository
+```bash
+   git clone https://github.com/KhanyfatulMuflikhat/webdev-form-builder-frontend.git
+   cd webdev-form-builder-frontend
+```
+
+2. Install dependencies
+```bash
+   npm install
+```
+
+3. Buat file `.env` dari `.env.example`
+```bash
+   cp .env.example .env
+```
+   Lalu isi `VITE_API_URL` dengan URL backend (default: `http://localhost:3000`).
+
+4. Jalankan aplikasi
+```bash
+   npm run dev
+```
+
+Aplikasi berjalan di `http://localhost:5173`
+
+## Halaman
+
+- `/login` - Halaman login
+- `/register` - Halaman register
+- `/forms` - Daftar form
+- `/forms/:id` - Detail form
+
+## Catatan
+
+Pastikan backend sudah berjalan sebelum menjalankan frontend.
