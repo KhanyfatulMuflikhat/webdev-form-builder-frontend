@@ -12,7 +12,7 @@ Frontend aplikasi Form Builder, dibangun dengan React + Vite dan Tailwind CSS.
 
 - Node.js v18+
 - npm
-- Backend API sudah berjalan
+- Backend API sudah berjalan (lihat repo backend)
 
 ## Instalasi
 
@@ -31,7 +31,7 @@ Frontend aplikasi Form Builder, dibangun dengan React + Vite dan Tailwind CSS.
 ```bash
    cp .env.example .env
 ```
-   Lalu isi `VITE_API_URL` dengan URL backend (default: `http://localhost:3000`).
+   Isi `VITE_API_URL` dengan URL backend (default: `http://localhost:3000`).
 
 4. Jalankan aplikasi
 ```bash
@@ -44,8 +44,17 @@ Aplikasi berjalan di `http://localhost:5173`
 
 - `/login` - Halaman login
 - `/register` - Halaman register
-- `/forms` - Daftar form
-- `/forms/:id` - Detail form
+- `/forms` - Daftar form milik user
+- `/forms/:id` - Detail form, kelola pertanyaan
+- `/forms/:id/respond` - Halaman pengisian form untuk responden
+
+## Fitur
+
+- Auth (login, register, logout)
+- CRUD Form (buat, lihat, edit, hapus)
+- Kelola pertanyaan (short answer, multiple choice, checkbox, dropdown)
+- Halaman pengisian form untuk responden
+- Loading state dan error handling
 
 ## Catatan
 
