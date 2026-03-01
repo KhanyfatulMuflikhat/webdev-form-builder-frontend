@@ -3,6 +3,7 @@ import LoginPage from './pages/LoginPage'
 import RegisterPage from './pages/RegisterPage'
 import FormListPage from './pages/FormListPage'
 import FormDetailPage from './pages/FormDetailPage'
+import RespondPage from './pages/RespondPage'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/forms" element={<FormListPage />} />
         <Route path="/forms/:id" element={<FormDetailPage />} />
+        <Route path="/forms/:id/respond" element={<RespondPage />} />
       </Routes>
     </BrowserRouter>
   )
